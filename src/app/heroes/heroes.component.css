@@ -1,0 +1,78 @@
+/* style for class heroes */
+.heroes {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+    margin: 20px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    padding: 6px;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.add-button{
+    padding: 10px;
+    border-style: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-button:hover{
+    background-color: grey;
+}
+
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heroes li{
+    position: relative;
+    cursor: pointer;
+}
+
+.heroes li.selected{
+    background: paleturquoise;
+}
+.heroes a{
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;/*corner*/
+    background: pink;
+    width: 100%;
+}
+
+.heroes .badge{
+    display: inline-block;
+    position: relative;
+    height: 1em;
+    top: -.3px;
+    left: -15px;
+    line-height: 0.5em;
+    border-radius: 10px 0 0 10px;
+    padding: 15px;
+    background-color: antiquewhite;
+}
+
+.heroes a:hover{
+    background-color: antiquewhite;
+}
+
+.delete{
+    border-style: none;
+    background-color: pink;
+    position: absolute;
+    left: 270px;
+    top: -6px;
+}
+
+.delete:hover {
+    background-color: antiquewhite;
+}
+

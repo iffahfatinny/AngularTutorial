@@ -1,0 +1,34 @@
+<h2>My Heroes</h2>
+    <div>
+        <label for="new-hero">Hero name: </label>
+        <input id="new-hero" #heroName />
+
+        <!-- (click) passes input value to add() and then clears the input-->
+        <button class="add-button" (click)="add(heroName.value); heroName.value=''">
+        Add Hero</button>
+    </div>
+<ul class="heroes">
+    <!-- *ngFor  iterate through the list of heroes -->
+    <!-- heroes hold the mock heroes from the HeroesComponent class-->
+    <!-- hero hold the current hero object for each iteration through the list-->
+    <li *ngFor="let hero of heroes">
+        <a routerLink="/detail/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span>{{hero.name}}
+        </a>
+        <!--
+            when user click li, angular execute the onSelect(hero) expression
+            assign clicked hero from the template to the component selectedHero
+        -->
+        <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
+    </li>
+</ul>
+
+<!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+    one way data binding from the selected Hero property of the 
+    HeroesComponent to the hero property of the target element which
+    map the hero property of the HeroDetailComponent-->
+<!-- *ngIf  remove the hero detail from the DOM
+    conditionally include or exclude a block of HTML
+-->
+<!-- help identify selected hero-->
+<!-- add [class.some-css-class]="some-condition"-->

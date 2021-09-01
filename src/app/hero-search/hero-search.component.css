@@ -1,0 +1,43 @@
+#search-component{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-result{
+    list-style-type: none;
+}
+
+label{
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+}
+
+input{
+    width: 100%;
+    max-width: 600px;
+    padding: .5em;
+    display: block;
+    box-sizing: border-box;
+}
+
+.search-result li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    border-bottom:  1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    color: black;
+}
+ ul{
+     margin-top: 0;
+     padding-left: 0;
+ }
+
+ a:hover{
+     background-color: lightblue;
+ }
+

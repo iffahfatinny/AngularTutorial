@@ -1,0 +1,19 @@
+div{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: indianred;
+    font-weight: bolder;
+}
+
+button{
+    padding: 10px;
+    border-radius: 4px;
+    border-style: none;
+}
+
+button:hover{
+    background-color: grey;
+}
