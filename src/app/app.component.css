@@ -1,4 +1,17 @@
- .navigation a{
+
+.mat-card{
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.mat-icon{
+    cursor: pointer;
+    float: right;
+    background-color: transparent;
+    border-style: hidden;
+}
+
+.navigation a{
     margin: 5px;
     display: inline-block;
     background-color: lightgrey;

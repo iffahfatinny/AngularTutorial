@@ -18,6 +18,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [ //list of component
@@ -35,6 +40,10 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     AppRoutingModule,
     HttpClientModule,
     // MatSliderModule,
+    MatSlideToggleModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule,
 
     //The HttpClientInMemoryWebApi Module module intercept HTTP request
     //and return simulated server responses.
