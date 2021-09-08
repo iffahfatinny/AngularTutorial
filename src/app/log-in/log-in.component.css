@@ -1,0 +1,85 @@
+.main{
+    /* min-height: 100vh; */
+    /* flexbox */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.right{
+    margin: 0;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 2cm; */
+    /* margin-left: 10cm; */
+     /* flexbox */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -moz-box;
+     display: -webkit-flex;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;   
+     justify-content: space-around;
+     align-items: flex-start;
+     align-content: flex-start;
+    /* margin-bottom: 50%; */
+    /* padding-top: 5cm; */
+}
+
+.left{
+    margin: 0;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 50%; */
+    /* padding-top: 5cm; */
+     /* flexbox */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -moz-box;
+     display: -webkit-flex;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;   
+     justify-content: space-around;
+     align-items: flex-start;
+     align-content: flex-start;
+}
+
+mat-card{
+    /* border-radius: 0;
+    box-shadow: none; */
+    transition: none !important;
+    box-shadow: none !important;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+mat-form-field:focus{
+    border-bottom: blue;
+}
+
+button{
+    margin: 0 5px 0 5px;
+    /* display: flex; */
+  /* align-items: inherit; */
+  /* justify-content: space-around; */
+}
+
+button:hover{
+    background-color: gainsboro;
+}
+

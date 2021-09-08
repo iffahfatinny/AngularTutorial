@@ -1,0 +1,82 @@
+<div class="main" fxFill>
+        <div class="mat-app-background left">
+            <mat-card>
+                <mat-card-content>
+                    <mat-label>
+                        welcome
+                    </mat-label>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    
+
+<div class="mat-app-background right">
+    <mat-card>
+        <mat-card-content>
+        <!-- <h2>Please Sign In</h2>
+        <h3>{{details.name}}</h3> -->
+        <form #addCustomerForm="ngForm">
+        
+        <mat-form-field  appearance="standard">
+        <mat-label>Username</mat-label>
+        <input 
+               matInput
+               #name="ngModel"
+               [(ngModel)]="details.name" 
+               type="text"
+               placeholder="Username" 
+               name="name" 
+               required>
+               <mat-error *ngIf="name.errors?.required && name.touched">Fill in the username</mat-error>
+        </mat-form-field>
+        <!-- put frommodule at import @ appmodule -->
+        <mat-form-field appearance="standard">
+            <mat-label>Password :</mat-label>
+            <input 
+                matInput 
+                #password="ngModel"
+                [type]="hide ? 'password' : 'text'"
+                minlength="3"
+                maxlength="10"
+                required
+                [(ngModel)]="details.password"
+                name="password">
+                <button 
+                        mat-icon-button 
+                        matSuffix (click)="hide = !hide" 
+                        [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>
+                            {{hide ? 'visibility_off' : 'visibility'}}
+                        </mat-icon>
+                </button>
+                <mat-error 
+                *ngIf="password.errors?.required 
+                && password.touched">
+                Fill in the password
+                </mat-error>
+                <mat-error 
+                *ngIf="password.errors?.minlength">
+                Password should be more than 3 character
+                </mat-error>
+                
+            </mat-form-field>
+
+            <button 
+            mat-raised-button 
+            (click)="signIn(addCustomerForm)">
+            Sign In</button>
+
+            <button 
+            mat-raised-button 
+            type="reset">Reset
+            </button>
+        
+        </form>
+    </mat-card-content>
+</mat-card>
+        
+
+</div>
+</div>
+<!-- label+input[type='text'].form-control and tab will create label and input with class form-control -->

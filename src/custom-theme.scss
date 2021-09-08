@@ -3,7 +3,7 @@
 // For more information: https://material.angular.io/guide/theming
 @use '~@angular/material' as mat;
 // Plus imports for other components in your app.
-
+@import "~@angular/material/theming";
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -25,24 +25,27 @@ $angular-heroes-list-theme: mat.define-light-theme((
     primary: $angular-heroes-list-primary,
     accent: $angular-heroes-list-accent,
     warn: $angular-heroes-list-warn,
-  )
+  ),
 ));
 
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($angular-heroes-list-theme);
 //dark theme
 $angular-heroes-list-dark-theme: mat.define-dark-theme((
   color: (
     primary: $angular-heroes-list-primary,
     accent: $angular-heroes-list-accent,
     warn: $angular-heroes-list-warn,
-  )
+  ),
 ));
 
 
-.dark-theme{
+.darkTheme{
   @include mat.all-component-themes($angular-heroes-list-dark-theme);
+  min-height: 100%;
+  box-sizing: border-box;
 }
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include mat.all-component-themes($angular-heroes-list-theme);
+
 

@@ -10,7 +10,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +22,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { LogInComponent } from './log-in/log-in.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogContentExampleDialog } from './log-in/log-in.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -32,7 +38,9 @@ import {MatIconModule} from '@angular/material/icon';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    LogInComponent,
+    DialogContentExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -44,6 +52,12 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
+    MatDialogModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatSlideToggleModule,
 
     //The HttpClientInMemoryWebApi Module module intercept HTTP request
     //and return simulated server responses.
@@ -54,6 +68,9 @@ import {MatIconModule} from '@angular/material/icon';
     ),
 
     BrowserAnimationsModule
+  ],
+  entryComponents: [
+    DialogContentExampleDialog
   ],
   providers: [],
   bootstrap: [AppComponent]
