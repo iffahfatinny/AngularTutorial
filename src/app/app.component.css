@@ -1,6 +1,10 @@
-.mat-card{
+.main{
+    overflow: auto;
+    height: 100vh;
+    min-height: 100%;
     border-radius: 0;
     box-shadow: none;
+    border-style: none;
 }
 
 .icon{

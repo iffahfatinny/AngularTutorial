@@ -1,5 +1,4 @@
 .main{
-    /* min-height: 100vh; */
     /* flexbox */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14,7 +13,6 @@
 }
 
 .right{
-    margin: 0;
     float: right;
     display: flex;
     align-items: center;

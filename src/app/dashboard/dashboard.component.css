@@ -6,8 +6,6 @@ h2{
 .heroes-menu{
     font-family: Arial, Helvetica, sans-serif;
     /* text-align: center; */
-    padding: 0;
-    margin: auto;
     max-width: 1000px;
 
     /* flexbox */

@@ -1,5 +1,4 @@
-
-    <mat-card>
+    <mat-card class="main">
       <mat-card-content>
         <div class="icon">
           <mat-icon>
@@ -10,15 +9,15 @@
           <mat-icon>bedtime</mat-icon>
         </div>
         
-    <h1>{{title}}</h1>
-    <nav class="navigation">
-        <a routerLink="/dashboard">Dashboard</a>
-        <a routerLink="/heroes">Heroes</a>
-        <a routerLink="/contact-form">Contact form</a>
-        <a routerLink="/log-in">log-in form</a>
-    </nav>
-    <router-outlet></router-outlet>
-    <!-- <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
-    <app-messages></app-messages>
-  </mat-card-content>
-</mat-card>
+        <h1>{{title}}</h1>
+        <nav class="navigation">
+            <a routerLink="/dashboard">Dashboard</a>
+            <a routerLink="/heroes">Heroes</a>
+            <a routerLink="/contact-form">Contact form</a>
+            <a routerLink="/log-in">log-in form</a>
+        </nav>
+        <router-outlet></router-outlet>
+        <!-- <mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
+        <app-messages></app-messages>
+      </mat-card-content>
+    </mat-card>
